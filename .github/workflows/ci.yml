@@ -15,13 +15,13 @@ jobs:
       contents: write
   
     steps:
-      - name: ztxx96
-        uses: snkrlai996@gmail.com
+      - name: Clone repository
+        uses: actions/checkout@v3
 
       - name: Auto green
         run: |
-          git config --local user.email "justjavac@gmail.com"
-          git config --local user.name "迷渡"
+          git config --local user.email "snkrlai996@gmail.com"
+          git config --local user.name "ztxx96"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
