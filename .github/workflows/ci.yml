@@ -15,8 +15,8 @@ jobs:
       contents: write
   
     steps:
-      - name: Clone repository
-        uses: actions/ztxx96
+      - name: ztxx96
+        uses: snkrlai996@gmail.com
 
       - name: Auto green
         run: |
